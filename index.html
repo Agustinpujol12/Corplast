@@ -12,51 +12,81 @@
     <link rel="stylesheet" href="./css/estilos.css">       
 </head>
     <body>
-        <header>    
-            <nav class="barra">
-                <ul class="licontainer"> 
-                <li class="logocontainer"><img src="./img/logo.png" alt="logo" class="logo"></li>
-                <li><a href="">Inicio</a></li>
-                <li><a href="./pages/Productos.html">Productos</a></li>
-                <li><a href="./pages/Empresa.html">Empresa</a></li>
-                <li><a href="./pages/Contacto.html">Contacto</a></li>
-                <li><a href="./pages/RealizarPedido.html">Realizar Pedido</a></li>
-                </ul>
+        <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Inicio</a>
+                        <a class="nav-item nav-link" href="./pages/Productos.html">Productos</a>
+                        <a class="nav-item nav-link" href="./pages/Empresa.html">Empresa</a>
+                        <a class="nav-item nav-link" href="./pages/Contacto.html">Contacto</a>
+                        <a class="nav-item nav-link" href="./pages/RealizarPedido.html">Realizar Pedido</a>
+                </div>
+                </div>
             </nav>
         </header>
         <main>
-            <div>
-                <img src="./img/adidas-timeline-header-v3.jpg" alt="Publicidad" class="Publicidad">
+            <div class="banner">
+                <img src="./img/banner.jpg" alt="Publicidad" class="Publicidad">
             </div>
-            <div class="divmodoverano">
-                <hr>
+            <div class="modaverano-container">
                 <span class="moda-verano">MODA VERANO</span>
-                <hr>
             </div>
             <div class="logowsp">
                     <img src="./img/ee994-logo-whatsapp-png.png" alt="wsp" class="wsp">
             </div>
             <div>
-                <section class="sectionsuelaindex">
-                    <article class="suelaindexcontainer">
-                        <div class="suelaindex">
-                            <img src="./img/lala.png" alt="Articulo lala" class="imgproducto">
-                            <p>Artículo: Lala</p>
-                            <p>Medida: 35 al 40</p>
-                        </div>      
-                        <div class="suelaindex">
-                            <img src="./img/angela.png" alt="Articulo angela" class="imgproducto">
-                            <p>Artículo: Angela</p>
-                            <p>Medida: 35 al 40</p>
+                <section>
+                    <div class="container">
+                        <div class="row text-center align-items-center stats-container">
+                            <div class="col-sm-6 col-lg-4 image-container">
+                                <img class="img-producto" src="./img/angela.png" alt="Articulo angela">
+                            </div>
+                            <div class="col-sm-6 col-lg-4 image-container">
+                                <img src="./img/lala.png" alt="Articulo lala">
+                            </div>
+                            <div class="col-sm-6 col-lg-4 image-container">
+                                <img src="./img/lala.png" alt="Articulo lala">
+                            </div>
+                            <div class="col-sm-6 col-lg-4 image-container">
+                                <img src="./img/lala.png" alt="Articulo lala">
+                            </div>
+                            <div class="col-sm-6 col-lg-4 image-container">
+                                <img src="./img/angela.png" alt="Articulo angela">
+                            </div>
+                            <div class="col-sm-6 col-lg-4 image-container">
+                                <img src="./img/lala.png" alt="Articulo lala">
+                            </div>
+                            <div class="col-sm-6 col-lg-4 image-container">
+                                <img src="./img/angela.png" alt="Articulo angela">
+                            </div>
+                            <div class="col-sm-6 col-lg-4 image-container">
+                                <img src="./img/lala.png" alt="Articulo lala">
+                            </div>
+                            <div class="col-sm-6 col-lg-4 image-container ">
+                                <img src="./img/angela.png" alt="Articulo angela">
+                            </div>
                         </div>
-                    </article>
-                </section>    
+                    </div>1
+                </section>
             </div>
         </main>
         <footer class="footer">
             <p>Agustin Pujol</p>
             <p><a href="agustinpujol12@gmail.com">agustinpujol12@gmail.com</a></p>
+            <div class="logoredessociales">
+                <img src="./img/InstagramNuevoLook.jpg" alt="Instagram" class="logoredsocial">
+                <img src="./img/logotipo-azul-redes-sociales_197792-1759.avif" alt="Facebook" class="logoredsocial">
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 </html>
+

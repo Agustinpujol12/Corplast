@@ -3,60 +3,52 @@
     padding: 0;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+
 html {
     font-size: 62.5%;
 }
-header{
-    background-color: #D3D0C9;
-    height: 20rem;
+
+#header {
+    position: sticky;
+    top: 0;
 }
+
+.navbar a:hover {
+    font-size: 2.5rem;
+}
+
 nav{
-    height: 100%;
+    background-color: #D3D0C9;
 }
-.licontainer {
-display: flex;
-width: 100%;
-justify-content: first baseline;
-align-items: center;
-height: 100%;
-margin-left: 20rem;
+
+.nav-link {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
 }
-.licontainer li{
-list-style: none;
-}
-.licontainer li a
-{
+
+a {
     text-decoration: none;
     color: black;
-    font-size: 2rem;
-    margin-left: 5rem;
 }
-.logocontainer{
-    height: 14rem;
-    width: 22rem;
-    margin-right: 25rem;
-    opacity: 0.7;
-    margin-top: 1rem;   
-}
-.logo{
-    width: 100%;
-    height: 100%;
+
+.logo {
+    width: 60%;
+    height: 60%;
     border-radius: 110%;
-    box-shadow: 10rem 0rem 1rem #d8e18b4d;
+    box-shadow: 10rem 0 1rem #d8e18b4d;
+    margin: 1rem;
 }
+
 h1{
-    text-align: center;
     margin-bottom: 3rem;
 }
+
 body{
     background-color: #D3D0C9;
+    width: 100%;
 }
 
-
-a{
-    text-decoration: none;
-    color: black;
-}
 .enlace{
     display: inline-block;
     width: 60rem;
@@ -78,12 +70,14 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .contenedor {
     display: inline-block;
     white-space: nowrap;
     margin-right: -5rem;
     width: 30rem;
 }
+
 .contenedor img {
     display: block;
     margin: 0 auto;
@@ -92,23 +86,35 @@ a{
     margin-bottom: 1rem;
 }
 
-.Publicidad{
-        text-align: center;
-        margin-bottom: 1rem; /* Agrega un margen inferior para separar las imágenes */
-        margin: 3rem 3rem 3rem 20rem;
-        width: 155rem;
-        height: 50rem;
+.banner {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
 }
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5rem;
+}
+
 footer {
     background-color: gray;
-    color: #fff;
     padding: 2rem;
+    margin-top: 2rem;
     text-align: center;
-    position: absolute;
+    position: sticky;
     bottom: -100rem;
     width: 100%;
     color: #ffffff;
     text-decoration: underline;
+}
+.modaverano-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .divmodoverano {
     display: flex;
@@ -118,6 +124,7 @@ footer {
     margin-bottom: 3rem;
     margin-left: 40rem;
 }
+
 hr {
     display: inline-block;
     width: 40rem; /* Ajusta el valor a lo que necesites */
@@ -126,51 +133,101 @@ hr {
     border: none;
     background-color: black;
 }
+
 .moda-verano {
     display: inline-block;
     font-size: 3rem; /* ajusta el tamaño de la fuente según tu preferencia */
     text-align: center;
 }
+
 .logowsp{
 margin-left: 180rem;
 margin-top: 1rem;
 }
+
 .wsp{
 margin-top: 1rem;
 width: 5rem;
 position: fixed;
 }
-.contacto{
-border: 1px solid black;
-}
-.contacto2{
-    margin-left: 95rem;
+
+
+.image-container {
     text-align: center;
-}
-.map{
-    width: 85rem;
-    height: 65rem;
-    margin-top: -35rem;
-    margin-left: 5rem;
-}
-.formcontacto{
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-.suelaindex{
-    width: 60rem;
-    height: 40rem;
-    border: 2px solid black
+.image-container img {
+    max-width: 100%;
+    height: auto;
 }
-.suelaindexcontainer{
+
+.logoredessociales{
     display: flex;
-    justify-content:space-around;
-}
-.imgproducto{
-    width: 100%;
-    height: 80%;
+    justify-content: flex-start;
 }
 
-.sectionsuelaindex{
-    margin-top: 10rem;
+.logoredsocial{
+    width: 2%;
+}
+
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+.contact-row-margin {
+    margin-top: 2.5rem;
+}
+
+.mapa-container {
+     display: flex;
+     margin: 2.5rem;
+ }
+
+.contacto-container {
+    margin: 2.5rem;
+}
+
+.parrafo-contacto {
+    font-size: 1.4rem;
+    color: #808080;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.titulo-contacto {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    max-width: 400px;
+    margin-top: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid lightslategray;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 0.6rem;
+    background-color:#D4D5B6;
+}
+
+.boton-enviar {
+    background-color: #D4D5B6;
+    color: black;
+    border: 1px solid lightslategray;
+    border-radius: 2rem;
+    width: 10rem;
+}
+
+.boton-enviar:hover {
+    background-color: #808080;
+    color: white;
 }

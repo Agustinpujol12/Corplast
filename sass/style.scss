@@ -3,20 +3,18 @@
     padding: 0;
     font-family: 'PT Sans Narrow', sans-serif;
 }
-
 html {
     font-size: 62.5%;
 }
-
 #header {
     position: sticky;
     top: 0;
 }
-
-.navbar a:hover {
+.navbar {
+    a:hover{
     font-size: 2.5rem;
 }
-
+}
 nav{
     background-color: #D3D0C9;
 }
@@ -31,7 +29,6 @@ a {
     text-decoration: none;
     color: black;
 }
-
 .logo {
     width: 60%;
     height: 60%;
@@ -77,39 +74,37 @@ body{
     margin-right: -5rem;
     width: 30rem;
 }
-
-.contenedor img {
+.contenedor  {
+    img {
     display: block;
     margin: 0 auto;
     width: 20rem;
     height: 20rem;
     margin-bottom: 1rem;
 }
-
+}
 .banner {
     width: 100%;
     max-width: 1600px;
     height: auto;
     margin: 0 auto;
 }
-
-.banner img {
+.banner {
+    img  {
     width: 100%;
     height: auto;
     display: block;
     margin-bottom: 5rem;
+}
 }
 
 footer {
     background-color: gray;
     padding: 2rem;
     margin-top: 2rem;
-    text-align: center;
     position: sticky;
     bottom: -100rem;
     width: 100%;
-    color: #ffffff;
-    text-decoration: underline;
 }
 .modaverano-container {
     display: flex;
@@ -156,12 +151,12 @@ position: fixed;
     text-align: center;
     margin-bottom: 20px;
 }
-
-.image-container img {
+.image-container  {
+    img {
     max-width: 100%;
     height: auto;
 }
-
+}
 .logoredessociales{
     display: flex;
     justify-content: flex-start;
@@ -180,9 +175,9 @@ position: fixed;
 }
 
 .mapa-container {
-     display: flex;
-     margin: 2.5rem;
- }
+    display: flex;
+    margin: 2.5rem;
+}
 
 .contacto-container {
     margin: 2.5rem;
@@ -230,4 +225,59 @@ input, textarea {
 .boton-enviar:hover {
     background-color: #808080;
     color: white;
+}
+
+.contenedorlogoredsocial {
+    img{
+        width: 100%;
+        
+    }
+    width: 2%;
+    margin-right: 1rem;
+    
+}
+
+.logoredsocial:hover{
+    width: 120%;
+}
+
+.Publicidad {
+    position: relative;
+    left: -100%;
+    animation: slideInAnimation 1s ease-in forwards;
+}
+
+@keyframes slideInAnimation {
+    from {
+    left: -100%;
+    }
+    to {
+    left: 0;}
+    }
+    .image-container {
+        opacity: 0;
+        transform: translateX(-100%) rotate(30deg);
+        animation: swingInAnimation 7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+    @keyframes swingInAnimation {
+        0% {
+        opacity: 0;
+        transform: translateX(-100%) rotate(30deg);
+        }
+        60% {
+        opacity: 1;
+        transform: translateX(0%) rotate(-10deg);
+        }
+        100% {
+        opacity: 1;
+        transform: translateX(0%) rotate(0deg);
+        }
+    }
+
+.navbaja{
+    text-align: center;
+    font-size: 2rem;
+    a{
+        justify-content: center;
+    }
 }

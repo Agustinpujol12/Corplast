@@ -141,7 +141,7 @@ footer {
   display: inline-block;
   font-size: 5rem; /* ajusta el tamaño de la fuente según tu preferencia */
   text-align: center;
-  margin-bottom: 5rem;
+  margin-top: 7rem;
   text-transform: uppercase;
   animation: animacionTitulo 2s ease-in-out infinite;
   color: #46310a;
@@ -439,6 +439,46 @@ input, textarea {
 
 .titulo:hover::before {
   transform: scaleX(1);
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  margin-left: 2rem;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 2rem;
+  font-size: 1.8rem;
+  width: 8rem;
+}
+
+th:nth-child(1), th:nth-child(21), th:nth-child(22),
+td:nth-child(1), td:nth-child(21), td:nth-child(22) {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  background-color: lightgray; /* Cambia el color de fondo si lo deseas */
+}
+
+.aclaraciontabla {
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.botoneviartabla {
+  margin-top: 2rem;
+  margin-left: 170rem;
+  width: 10rem;
+  font-size: 2rem;
+}
+
+.col-md-6 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20rem;
+}
+.col-md-6 h2 {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

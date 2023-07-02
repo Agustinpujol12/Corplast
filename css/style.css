@@ -1,12 +1,11 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans Narrow", sans-serif;
-}
-
-html {
-  font-size: 62.5%;
+footer {
+  display: flex;
+  background-color: #D3D0C9;
+  padding: 2rem;
+  margin-top: 3rem;
+  bottom: -100rem;
+  width: 100%;
 }
 
 #header {
@@ -28,17 +27,72 @@ nav {
   margin-right: 1rem;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .logo {
   width: 60%;
   height: 60%;
   border-radius: 110%;
   box-shadow: 10rem 0 1rem rgba(216, 225, 139, 0.3019607843);
   margin: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  margin-left: 2rem;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 2rem;
+  font-size: 1.8rem;
+  width: 8rem;
+}
+
+th:nth-child(1), th:nth-child(21), th:nth-child(22),
+td:nth-child(1), td:nth-child(21), td:nth-child(22) {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  background-color: lightgray; /* Cambia el color de fondo si lo deseas */
+}
+
+.aclaraciontabla {
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.botoneviartabla {
+  margin-top: 2rem;
+  margin-left: 170rem;
+  width: 10rem;
+  font-size: 2rem;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -86,29 +140,6 @@ body {
   width: 20rem;
   height: 20rem;
   margin-bottom: 1rem;
-}
-
-.banner {
-  width: 100%;
-  max-width: 1600px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 5rem;
-}
-
-footer {
-  display: flex;
-  background-color: #D3D0C9;
-  padding: 2rem;
-  margin-top: 3rem;
-  bottom: -100rem;
-  width: 100%;
 }
 
 .modaverano-container {
@@ -413,10 +444,6 @@ input, textarea {
   font-size: 2rem;
 }
 
-.hola {
-  font-size: 3rem;
-}
-
 .titulo {
   text-align: center;
   font-size: 48px;
@@ -439,37 +466,6 @@ input, textarea {
 
 .titulo:hover::before {
   transform: scaleX(1);
-}
-
-table {
-  border-collapse: collapse;
-  background-color: white;
-  margin-left: 2rem;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 2rem;
-  font-size: 1.8rem;
-  width: 8rem;
-}
-
-th:nth-child(1), th:nth-child(21), th:nth-child(22),
-td:nth-child(1), td:nth-child(21), td:nth-child(22) {
-  width: 100px; /* Ajusta el tamaño según tus necesidades */
-  background-color: lightgray; /* Cambia el color de fondo si lo deseas */
-}
-
-.aclaraciontabla {
-  margin-left: 2rem;
-  font-size: 2rem;
-}
-
-.botoneviartabla {
-  margin-top: 2rem;
-  margin-left: 170rem;
-  width: 10rem;
-  font-size: 2rem;
 }
 
 .col-md-6 {

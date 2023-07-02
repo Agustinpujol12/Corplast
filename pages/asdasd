@@ -1,9 +1,0 @@
-            <div class="divenlace">
-                <a class="enlace" href="">Moda</a>
-                <a class="enlace" href="">Deportiva</a>
-            </div>
-
-            .divenlace
-{
-    margin: 3rem 3rem 5rem 3rem;
-}

@@ -1,3 +1,11 @@
+@use 'Assets/footer';
+@use 'Assets/header';
+@use 'contacto';
+@use 'empresa';
+@use 'productos';
+@use 'realizarPedido';
+@use 'index';
+
 *{
     margin: 0;
     padding: 0;
@@ -6,35 +14,10 @@
 html {
     font-size: 62.5%;
 }
-#header {
-    position: sticky;
-    top: 0;
-}
-.navbar {
-    a:hover{
-    font-size: 2.5rem;
-}
-}
-nav{
-    background-color: #D3D0C9;
-}
-
-.nav-link {
-    font-size: 2rem;
-    margin-left: 2rem;
-    margin-right: 1rem;
-}
 
 a {
     text-decoration: none;
     color: black;
-}
-.logo {
-    width: 60%;
-    height: 60%;
-    border-radius: 110%;
-    box-shadow: 10rem 0 1rem #d8e18b4d;
-    margin: 1rem;
 }
 
 h1{
@@ -83,30 +66,9 @@ body{
     margin-bottom: 1rem;
 }
 }
-.banner {
-    width: 100%;
-    max-width: 1600px;
-    height: auto;
-    margin: 0 auto;
-}
-.banner {
-    img  {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 5rem;
-}
-}
 
-footer {
-    display: flex;
-    background-color: #D3D0C9;
-    padding: 2rem;
-    margin-top: 3rem;
-    // position: sticky;
-    bottom: -100rem;
-    width: 100%;
-}
+
+
 .modaverano-container {
     display: flex;
     align-items: center;
@@ -407,9 +369,6 @@ justify-content: center;
     }
 }
 
-.hola{
-    font-size: 3rem;
-}
 
 .titulo {
     text-align: center;
@@ -435,36 +394,7 @@ justify-content: center;
     transform: scaleX(1);
 }
 
-table {
-    border-collapse: collapse;
-    background-color: white;
-    margin-left: 2rem;
-}
 
-th, td {
-    border: 1px solid black;
-    padding: 2rem;
-    font-size: 1.8rem;
-    width: 8rem;
-}
-
-th:nth-child(1), th:nth-child(21), th:nth-child(22),
-td:nth-child(1), td:nth-child(21), td:nth-child(22) {
-    width: 100px; /* Ajusta el tamaño según tus necesidades */
-    background-color: lightgray; /* Cambia el color de fondo si lo deseas */
-}
-
-.aclaraciontabla {
-    margin-left: 2rem;
-    font-size: 2rem;
-}
-
-.botoneviartabla{
-    margin-top: 2rem;
-    margin-left: 170rem;
-    width: 10rem;
-    font-size: 2rem;
-}
 .col-md-6{
     font-size: 2rem;
     text-align: center;

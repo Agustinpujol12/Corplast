@@ -1,9 +1,50 @@
-footer {
-    display: flex;
-    background-color: #D3D0C9;
-    padding: 2rem;
-    margin-top: 3rem;
-    // position: sticky;
-    bottom: -100rem;
+.footer{
+    background: #D3D0C9;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer .row-footer{
     width: 100%;
+    margin: 1% 0;
+    padding: 0.6% 0;
+    color: #24282C;
+    font-size: 2rem;
+}
+
+.footer .row-footer a{
+    text-decoration: none;
+    color: #24282C;
+    transition: 0.5s;
+}
+
+.footer .row-footer a:hover{
+    color: #fff;
+}
+
+.footer .row-footer ul{
+    width: 100%;
+}
+
+.footer .row-footer ul li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.footer .row-footer a i{
+    font-size: 4rem;
+    margin: 0 1%;
+}
+
+@media (max-width:720px){
+    .footer{
+        text-align: center;
+    }
+    .footer .row-footer ul li{
+        display: block;
+        text-align: center;
+    }
+    .footer .row-footer a i{
+
+    }
 }

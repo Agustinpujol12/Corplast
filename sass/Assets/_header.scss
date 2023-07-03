@@ -1,6 +1,7 @@
 #header {
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 .navbar {
     a:hover{
@@ -22,4 +23,5 @@ nav{
     border-radius: 110%;
     box-shadow: 10rem 0 1rem #d8e18b4d;
     margin: 1rem;
+    display: block;
 }

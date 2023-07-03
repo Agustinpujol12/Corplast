@@ -1,0 +1,36 @@
+.titulo-contacto {
+  margin-bottom: 1.5rem;
+}
+
+form {
+  max-width: 400px;
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid lightslategray;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 0.6rem;
+  background-color:#D4D5B6;
+}
+
+.boton-enviar {
+  background-color: #D4D5B6;
+  color: black;
+  border: 1px solid lightslategray;
+  border-radius: 2rem;
+  width: 10rem;
+}
+
+.boton-enviar:hover {
+  background-color: #808080;
+  color: white;
+}

@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Realiza tu pedido de suelas de forma rápida y sencilla en nuestra tienda en línea. Agrega los productos deseados al carrito y completa el proceso de compra con facilidad.">
-    <meta name="keywords" content="Tienda de suelas, Envío de suelas">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Realiza tu pedido de suelas de forma rápida y sencilla. Seleccioná productos y talles, agregalos al carrito y enviá tu pedido por WhatsApp." />
+    <meta name="keywords" content="suelas, pedido, whatsapp, calzado" />
     <title>Corplast - Realizar Pedido</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body>
+    <!-- Header -->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img class="logo" src="../img/logo4.png" alt="Logo Corplast">
+                    <img class="logo" src="../img/logo4.png" alt="Logo Corplast" />
                 </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Empresa.html">Empresa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="RealizarPedido.html">Realizar Pedido</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Empresa.html">Empresa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="RealizarPedido.html">Realizar Pedido</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- Main -->
     <main class="py-5">
         <div class="container">
             <h1 class="text-center mb-5">Realizar Pedido</h1>
-            <div class="row">
+
+            <div class="row g-4">
+                <!-- Selector de productos -->
                 <div class="col-md-6">
                     <h3 class="mb-4">Añadir Producto al Pedido</h3>
+
                     <div class="mb-3">
                         <label for="product-select" class="form-label">Selecciona un producto:</label>
                         <select id="product-select" class="form-select"></select>
                     </div>
+
                     <div id="size-inputs" class="mb-3"></div>
+
                     <button id="add-to-cart" class="btn btn-primary">Agregar al Carrito</button>
                 </div>
+
+                <!-- Carrito -->
                 <div class="col-md-6">
                     <h3 class="mb-4">Carrito de Compras</h3>
                     <div id="cart" class="list-group"></div>
@@ -71,20 +77,63 @@
         </div>
     </main>
 
+    <!-- Botón flotante de WhatsApp -->
     <div class="logowsp">
-         <a href="https://wa.me/+5493512306308" class="wsp" target="_blank">
-            <img src="../img/ee994-logo-whatsapp-png.png" alt="wsp" class="wsp">
+        <a href="https://wa.me/+5493512306308" class="wsp" target="_blank" rel="noopener">
+            <img src="../img/ee994-logo-whatsapp-png.png" alt="WhatsApp" class="wsp" />
         </a>
     </div>
 
+    <!-- Footer (idéntico al de index.html) -->
     <footer class="footer bg-dark text-white pt-5 pb-4">
-        <!-- Footer content remains the same as other pages -->
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Corplast</h5>
+                    <p>Ventas al por menor y por mayor de suelas para calzado. Realizamos envíos a todo el país.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Links</h5>
+                    <p><a href="../index.html" class="text-white" style="text-decoration: none;">Inicio</a></p>
+                    <p><a href="Productos.html" class="text-white" style="text-decoration: none;">Productos</a></p>
+                    <p><a href="Empresa.html" class="text-white" style="text-decoration: none;">Empresa</a></p>
+                    <p><a href="Contacto.html" class="text-white" style="text-decoration: none;">Contacto</a></p>
+                    <p><a href="RealizarPedido.html" class="text-white" style="text-decoration: none;">Realizar
+                            Pedido</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contacto</h5>
+                    <p><i class="fas fa-home mr-3"></i> Lunes a Viernes 9hs a 16hs</p>
+                    <p><i class="fas fa-phone mr-3"></i> (+549) 3512306308</p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Redes Sociales</h5>
+                                        <a href="https://www.facebook.com" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                    </a>
+                    <a href="https://www.instagram.com/fondoscorplast" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>                       
+                    </a>
+                </div>
+            </div>
+
+            <hr class="mb-4" />
+
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="mb-0">
+                        © 2025 Corplast. Desarrollado por <strong class="text-primary">Agustín Pujol</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const products = [
-            // Re-use the same product data from Productos.html
             { name: 'Ricky', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
             { name: 'Valen', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
             { name: 'Paula', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
@@ -100,7 +149,7 @@
             { name: 'Palermo', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
             { name: 'Isabel', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
         ];
-        
+
         let cart = [];
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -110,13 +159,10 @@
             const cartContainer = document.getElementById('cart');
             const sendOrderBtn = document.getElementById('send-order');
 
-            // Populate product selector
-            products.forEach(p => {
-                const option = new Option(p.name, p.name);
-                productSelect.add(option);
-            });
+            // Llenar el selector
+            products.forEach(p => productSelect.add(new Option(p.name, p.name)));
 
-            // Show size inputs for selected product
+            // Mostrar inputs de talles del producto seleccionado
             productSelect.addEventListener('change', () => {
                 const selectedProduct = products.find(p => p.name === productSelect.value);
                 sizeInputs.innerHTML = '';
@@ -124,53 +170,54 @@
                     const div = document.createElement('div');
                     div.className = 'input-group mb-2';
                     div.innerHTML = `
-                        <span class="input-group-text">Talle ${size}</span>
-                        <input type="number" class="form-control size-input" data-size="${size}" min="0" placeholder="Cantidad">
-                    `;
+            <span class="input-group-text">Talle ${size}</span>
+            <input type="number" class="form-control size-input" data-size="${size}" min="0" placeholder="Cantidad" />
+          `;
                     sizeInputs.appendChild(div);
                 });
             });
-            productSelect.dispatchEvent(new Event('change')); // Trigger for initial product
+            productSelect.dispatchEvent(new Event('change'));
 
-            // Add to cart
+            // Agregar al carrito
             addToCartBtn.addEventListener('click', () => {
                 const productName = productSelect.value;
                 const quantities = {};
                 let hasQuantity = false;
+
                 document.querySelectorAll('.size-input').forEach(input => {
-                    if (input.value > 0) {
-                        quantities[input.dataset.size] = input.value;
+                    const val = Number(input.value);
+                    if (val > 0) {
+                        quantities[input.dataset.size] = val;
                         hasQuantity = true;
                     }
                 });
 
-                if (hasQuantity) {
-                    const existingItem = cart.find(item => item.name === productName);
-                    if (existingItem) {
-                        // For simplicity, we overwrite quantities. A more complex app might merge them.
-                        existingItem.quantities = quantities;
-                    } else {
-                        cart.push({ name: productName, quantities });
-                    }
-                    updateCartView();
+                if (!hasQuantity) return;
+
+                const existing = cart.find(i => i.name === productName);
+                if (existing) {
+                    existing.quantities = quantities; // sobrescribe cantidades
+                } else {
+                    cart.push({ name: productName, quantities });
                 }
+                updateCartView();
             });
 
-            // Send order
+            // Enviar pedido por WhatsApp
             sendOrderBtn.addEventListener('click', () => {
                 if (cart.length === 0) {
                     alert('El carrito está vacío.');
                     return;
                 }
-                let message = 'Hola, quisiera realizar el siguiente pedido:\n\n';
+                let message = 'Hola, quisiera realizar el siguiente pedido:%0A%0A';
                 cart.forEach(item => {
-                    message += `*${item.name}:*\n`;
+                    message += `*${item.name}:*%0A`;
                     for (const size in item.quantities) {
-                        message += `  - Talle ${size}: ${item.quantities[size]}\n`;
+                        message += `- Talle ${size}: ${item.quantities[size]}%0A`;
                     }
-                    message += '\n';
+                    message += '%0A';
                 });
-                const whatsappUrl = `https://wa.me/+5493512306308?text=${encodeURIComponent(message)}`;
+                const whatsappUrl = `https://wa.me/+5493512306308?text=${message}`;
                 window.open(whatsappUrl, '_blank');
             });
 
@@ -181,29 +228,30 @@
                     return;
                 }
                 cart.forEach((item, index) => {
-                    let itemDetails = ``;
+                    let itemDetails = '';
                     for (const size in item.quantities) {
                         itemDetails += `<span class="badge bg-secondary me-1">Talle ${size}: ${item.quantities[size]}</span>`;
                     }
                     cartContainer.innerHTML += `
-                        <div class="list-group-item d-flex justify-content-between align-items-center">
-                            <div>
-                                <h6 class="mb-1">${item.name}</h6>
-                                ${itemDetails}
-                            </div>
-                            <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">X</button>
-                        </div>
-                    `;
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="mb-1">${item.name}</h6>
+                ${itemDetails}
+              </div>
+              <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})" aria-label="Eliminar">X</button>
+            </div>
+          `;
                 });
             }
-            
+
             window.removeFromCart = (index) => {
                 cart.splice(index, 1);
                 updateCartView();
-            }
-            
+            };
+
             updateCartView();
         });
     </script>
 </body>
+
 </html>

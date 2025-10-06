@@ -1,0 +1,124 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header and Navbar */
+.header .logo {
+    max-height: 50px;
+    border-radius: 8px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('../img/banner.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+}
+
+/* Products Section */
+.products-section {
+    background-color: #ffffff;
+}
+
+.products-section .card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.products-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.products-section .card-title {
+    font-weight: 700;
+}
+
+/* WhatsApp Floating Button */
+.logowsp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.wsp {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wsp:hover {
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.footer a.text-white:hover {
+    color: #0d6efd !important; /* Bootstrap primary color */
+}
+
+.footer .text-primary {
+    color: #0d6efd !important;
+}
+
+.footer .btn-floating {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .btn-floating:hover {
+    color: #0d6efd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}

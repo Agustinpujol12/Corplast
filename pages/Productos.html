@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestro extenso catálogo de productos de suelas para zapatillas y zapatos. Encuentra suelas de diferentes materiales, estilos y tamaños, diseñadas para brindar comodidad y durabilidad. Navega por nuestras categorías y descubre las últimas tendencias en suelas. Con precios competitivos y calidad excepcional, te ofrecemos la mejor selección de productos para renovar tus calzados.">
+    <meta name="keywords" content="Comprar suelas, suela de zapatos, suela de zapatillas, air force, botin, botin de trabajo, botin de futbol, suela vans, suela nike, botas">
+    <title>Corplast - Productos</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .filter-buttons .btn {
+            margin: 0 5px;
+        }
+        .product-card {
+            display: block; /* Asegura que las tarjetas se muestren por defecto */
+        }
+        .product-card.hide {
+            display: none; /* Oculta las tarjetas con la clase 'hide' */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../img/logo.png" alt="Logo Corplast">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="RealizarPedido.html">Realizar Pedido</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Nuestros Productos</h1>
+            <div class="text-center mb-5 filter-buttons">
+                <button class="btn btn-primary" onclick="filterProducts('all')">Todos</button>
+                <button class="btn btn-outline-primary" onclick="filterProducts('deportiva')">Deportiva</button>
+                <button class="btn btn-outline-primary" onclick="filterProducts('moda')">Moda</button>
+            </div>
+
+            <div id="product-grid" class="row">
+                <!-- Los productos se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+    </main>
+
+    <div class="logowsp">
+        <a href="https://wa.me/+5493512306308" class="wsp" target="_blank">
+                <img src="../img/ee994-logo-whatsapp-png.png" alt="wsp" class="wsp">
+            </a>
+    </div>
+
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Corplast</h5>
+                    <p>Ventas al por menor y por mayor de suelas para calzado. Realizamos envíos a todo el país.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Links</h5>
+                    <p><a href="../index.html" class="text-white" style="text-decoration: none;">Inicio</a></p>
+                    <p><a href="Productos.html" class="text-white" style="text-decoration: none;">Productos</a></p>
+                    <p><a href="Empresa.html" class="text-white" style="text-decoration: none;">Empresa</a></p>
+                    <p><a href="Contacto.html" class="text-white" style="text-decoration: none;">Contacto</a></p>
+                    <p><a href="RealizarPedido.html" class="text-white" style="text-decoration: none;">Realizar Pedido</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contacto</h5>
+                    <p><i class="fas fa-home mr-3"></i> Lunes a Viernes 9hs a 16hs</p>
+                    <p><i class="fas fa-phone mr-3"></i> (+549) 3512306308</p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Redes Sociales</h5>
+                    <a href="https://www.facebook.com/agustin.pujol2" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/agu.pujol/" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p> © 2023 Copyright:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-primary">Corplast</strong>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const products = [
+            // Deportiva
+            { name: 'Ricky', category: 'deportiva', image: '../img/ricky.jpeg', description: 'Color: Blanco <br> Numeracion: 35 al 40 <br> Material: Micro', priceUSD: 3.00 },
+            { name: 'Valen', category: 'deportiva', image: '../img/valen.jpeg', description: 'Color: Blanco <br> Numeracion: 35 al 40 <br> Material: Micro', priceUSD: 3.60 },
+            { name: 'Paula', category: 'deportiva', image: '../img/paula.jpeg', description: 'Color: Blanco <br> Numeracion: 35 al 40 <br> Material: Micro', priceUSD: 3.75 },
+            { name: 'Sofia', category: 'deportiva', image: '../img/sofia.jpeg', description: 'Color: Blanco <br> Numeracion: 35 al 40 <br> Material: Micro', priceUSD: 3.60 },
+            { name: 'Ego', category: 'deportiva', image: '../img/ego.jpeg', description: 'Color: Blanco <br> Numeracion: 35 al 40 <br> Material: Tr', priceUSD: 8.00 },
+            { name: 'Kala', category: 'deportiva', image: '../img/kala.jpeg', description: 'Color: Blanco <br> Numeracion: 35 al 40 <br> Material: Tr', priceUSD: 6.80 },
+            // Moda
+            { name: 'Capri', category: 'moda', image: '../img/capridl.jpeg', description: 'Color: Dulce de leche <br> Numeracion: 35 al 40 <br> Material: Tr exp', priceUSD: 8.50 },
+            { name: 'Rosela', category: 'moda', image: '../img/roseladl.jpeg', description: 'Color: Dulce de leche <br> Numeracion: 35 al 40 <br> Material: Tr exp', priceUSD: 9.00 },
+            { name: 'Lia', category: 'moda', image: '../img/liadl.jpeg', description: 'Color: Dulce de leche <br> Numeracion: 35 al 40 <br> Material: Tr exp', priceUSD: 9.60 },
+            { name: 'Lala', category: 'moda', image: '../img/lala.jpeg', description: 'Color: Dulce de leche <br> Numeracion: 35 al 40 <br> Material: Eva ex', priceUSD: 7.50 },
+            { name: 'Katy', category: 'moda', image: '../img/katydl.jpeg', description: 'Color: Dulce de leche <br> Numeracion: 35 al 40 <br> Material: Tr exp', priceUSD: 7.80 },
+            { name: 'Marea', category: 'moda', image: '../img/mareadl.jpeg', description: 'Color: Dulce de leche <br> Numeracion: 35 al 40 <br> Material: Tr exp', priceUSD: 0 }, // Assuming 0 is a placeholder
+            { name: 'Palermo', category: 'moda', image: '../img/palermodl.jpeg', description: 'Color: Dulce de leche <br> Numeracion: 35 al 40 <br> Material: Tr exp', priceUSD: 7.90 },
+            { name: 'Isabel', category: 'moda', image: '../img/isabeldl.jpeg', description: 'Color: Dulce de leche <br> Numeracion: 35 al 40 <br> Material: Tr exp', priceUSD: 9.00 },
+        ];
+
+        const valorDolar = 260; // Este valor puede ser actualizado dinámicamente
+
+        function renderProducts(filter = 'all') {
+            const productGrid = document.getElementById('product-grid');
+            productGrid.innerHTML = ''; // Limpiar la grilla
+            const filteredProducts = filter === 'all' ? products : products.filter(p => p.category === filter);
+
+            filteredProducts.forEach(product => {
+                const priceARS = (product.priceUSD * valorDolar).toFixed(2);
+                const card = `
+                    <div class="col-md-4 mb-4 product-card" data-category="${product.category}">
+                        <div class="card h-100">
+                            <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">${product.name}</h5>
+                                <p class="card-text">${product.description}</p>
+                                <p class="card-text fw-bold">Precio: $${priceARS}</p>
+                                <a href="./RealizarPedido.html" class="btn btn-primary mt-auto">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productGrid.innerHTML += card;
+            });
+        }
+
+        function filterProducts(category) {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.classList.remove('hide');
+                } else {
+                    card.classList.add('hide');
+                }
+            });
+        }
+        
+        // Renderizar todos los productos al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+        });
+
+    </script>
+</body>
+</html>

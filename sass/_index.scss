@@ -1,0 +1,44 @@
+.banner {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+}
+.banner {
+    img  {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 5rem;
+}
+}
+
+.col-md-6{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20rem;
+    h2{
+        font-size: 3rem;
+    }
+}
+
+.modaverano-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moda-verano {
+    display: inline-block;
+    font-size: 5rem; /* ajusta el tamaño de la fuente según tu preferencia */
+    text-align: center;
+    margin-top: 7rem;
+    text-transform: uppercase;
+    animation: animacionTitulo 2s ease-in-out infinite;
+    color: #46310a;;
+}
+
+.Publicidad {
+    left: -100%;
+    animation: slideInAnimation 1s ease-in forwards;
+}

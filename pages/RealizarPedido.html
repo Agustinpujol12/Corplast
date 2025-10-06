@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Realiza tu pedido de suelas de forma rápida y sencilla en nuestra tienda en línea. Agrega los productos deseados al carrito y completa el proceso de compra con facilidad.">
+    <meta name="keywords" content="Tienda de suelas, Envío de suelas">
+    <title>Corplast - Realizar Pedido</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../img/logo.png" alt="Logo Corplast">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="RealizarPedido.html">Realizar Pedido</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Realizar Pedido</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mb-4">Añadir Producto al Pedido</h3>
+                    <div class="mb-3">
+                        <label for="product-select" class="form-label">Selecciona un producto:</label>
+                        <select id="product-select" class="form-select"></select>
+                    </div>
+                    <div id="size-inputs" class="mb-3"></div>
+                    <button id="add-to-cart" class="btn btn-primary">Agregar al Carrito</button>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-4">Carrito de Compras</h3>
+                    <div id="cart" class="list-group"></div>
+                    <button id="send-order" class="btn btn-success mt-3">Enviar Pedido por WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="logowsp">
+         <a href="https://wa.me/+5493512306308" class="wsp" target="_blank">
+            <img src="../img/ee994-logo-whatsapp-png.png" alt="wsp" class="wsp">
+        </a>
+    </div>
+
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <!-- Footer content remains the same as other pages -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const products = [
+            // Re-use the same product data from Productos.html
+            { name: 'Ricky', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Valen', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Paula', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Sofia', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Ego', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Kala', category: 'deportiva', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Capri', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Rosela', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Lia', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Lala', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Katy', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Marea', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Palermo', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
+            { name: 'Isabel', category: 'moda', sizes: ['35', '36', '37', '38', '39', '40'] },
+        ];
+        
+        let cart = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const productSelect = document.getElementById('product-select');
+            const sizeInputs = document.getElementById('size-inputs');
+            const addToCartBtn = document.getElementById('add-to-cart');
+            const cartContainer = document.getElementById('cart');
+            const sendOrderBtn = document.getElementById('send-order');
+
+            // Populate product selector
+            products.forEach(p => {
+                const option = new Option(p.name, p.name);
+                productSelect.add(option);
+            });
+
+            // Show size inputs for selected product
+            productSelect.addEventListener('change', () => {
+                const selectedProduct = products.find(p => p.name === productSelect.value);
+                sizeInputs.innerHTML = '';
+                selectedProduct.sizes.forEach(size => {
+                    const div = document.createElement('div');
+                    div.className = 'input-group mb-2';
+                    div.innerHTML = `
+                        <span class="input-group-text">Talle ${size}</span>
+                        <input type="number" class="form-control size-input" data-size="${size}" min="0" placeholder="Cantidad">
+                    `;
+                    sizeInputs.appendChild(div);
+                });
+            });
+            productSelect.dispatchEvent(new Event('change')); // Trigger for initial product
+
+            // Add to cart
+            addToCartBtn.addEventListener('click', () => {
+                const productName = productSelect.value;
+                const quantities = {};
+                let hasQuantity = false;
+                document.querySelectorAll('.size-input').forEach(input => {
+                    if (input.value > 0) {
+                        quantities[input.dataset.size] = input.value;
+                        hasQuantity = true;
+                    }
+                });
+
+                if (hasQuantity) {
+                    const existingItem = cart.find(item => item.name === productName);
+                    if (existingItem) {
+                        // For simplicity, we overwrite quantities. A more complex app might merge them.
+                        existingItem.quantities = quantities;
+                    } else {
+                        cart.push({ name: productName, quantities });
+                    }
+                    updateCartView();
+                }
+            });
+
+            // Send order
+            sendOrderBtn.addEventListener('click', () => {
+                if (cart.length === 0) {
+                    alert('El carrito está vacío.');
+                    return;
+                }
+                let message = 'Hola, quisiera realizar el siguiente pedido:\n\n';
+                cart.forEach(item => {
+                    message += `*${item.name}:*\n`;
+                    for (const size in item.quantities) {
+                        message += `  - Talle ${size}: ${item.quantities[size]}\n`;
+                    }
+                    message += '\n';
+                });
+                const whatsappUrl = `https://wa.me/+5493512306308?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+
+            function updateCartView() {
+                cartContainer.innerHTML = '';
+                if (cart.length === 0) {
+                    cartContainer.innerHTML = '<p>El carrito está vacío.</p>';
+                    return;
+                }
+                cart.forEach((item, index) => {
+                    let itemDetails = ``;
+                    for (const size in item.quantities) {
+                        itemDetails += `<span class="badge bg-secondary me-1">Talle ${size}: ${item.quantities[size]}</span>`;
+                    }
+                    cartContainer.innerHTML += `
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-1">${item.name}</h6>
+                                ${itemDetails}
+                            </div>
+                            <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">X</button>
+                        </div>
+                    `;
+                });
+            }
+            
+            window.removeFromCart = (index) => {
+                cart.splice(index, 1);
+                updateCartView();
+            }
+            
+            updateCartView();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    background-color: white;
+    margin-left: 2rem;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 2rem;
+    font-size: 1.8rem;
+    width: 8rem;
+}
+
+th:nth-child(1), th:nth-child(21), th:nth-child(22),
+td:nth-child(1), td:nth-child(21), td:nth-child(22) {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    background-color: lightgray; /* Cambia el color de fondo si lo deseas */
+}
+
+.aclaraciontabla {
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.botoneviartabla{
+    margin-top: 2rem;
+    margin-left: 170rem;
+    width: 10rem;
+    font-size: 2rem;
+}

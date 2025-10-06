@@ -7,9 +7,20 @@ body {
 
 /* Header and Navbar */
 .header .logo {
-    max-height: 50px;
-    border-radius: 8px;
+    height: 80px;             /* Mantiene la altura del header */
+    width: auto;              /* Conserva proporciones originales */
+    max-width: 320px;         /* 🔹 Más ancho y visible */
+    border-radius: 6px;       /* Esquinas suaves */
+    object-fit: contain;      /* Evita deformaciones */
+    transform: translateY(-5px); /* Centrado visual */
+    transition: transform 0.3s ease, max-width 0.3s ease;
 }
+
+.header .logo:hover {
+    transform: translateY(-5px) scale(1.05); /* Pequeño efecto al pasar el cursor */
+}
+
+
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.8);

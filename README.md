@@ -59,8 +59,7 @@ https://corplast.vercel.app/
 ## 🖼️ Vista previa
 
 <p align="center">
-  <img src="img/preview.png" alt="Vista previa del inicio" width="600" style="margin:10px"/>
-  <img src="img/preview.png" alt="Vista general del sitio" width="600" style="margin:10px"/>
+<img src="img/preview.png" alt="Vista general del sitio" width="600" style="margin:10px"/>
 </p>
 
 ---

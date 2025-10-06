@@ -2,8 +2,6 @@
   <img src="img/logo4.png" alt="Corplast logo" width="220"/>
 </p>
 
-<h1 align="center">Corplast</h1>
-
 <p align="center">
   Sitio web institucional para <b>Corplast S.R.L.</b><br/>
   Empresa dedicada a la fabricación y venta de <b>suelas y bases para calzado</b> en Argentina.

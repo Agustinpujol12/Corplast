@@ -54,4 +54,4 @@ Incluye una **estructura moderna y adaptable (responsive)** con navegación clar
 
 ## 🚀 Ejecución local
 
-1. https://corplast.vercel.app/
+https://corplast.vercel.app/

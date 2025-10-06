@@ -64,9 +64,8 @@ https://corplast.vercel.app/
 
 <p align="center">
   <img src="docs/home-preview.png" alt="Vista previa del inicio" width="600" style="margin:10px"/>
+  <img src="docs/preview.png" alt="Vista general del sitio" width="600" style="margin:10px"/>
 </p>
-
-*(Podés agregar capturas de la página principal o secciones dentro de una carpeta `docs/` si querés mostrarlas en GitHub.)*
 
 ---
 
@@ -82,4 +81,4 @@ Uso con fines educativos o de portafolio personal permitido.
 
 **Agustín Pujol**  
 Desarrollador de software | Android · Web · UX/UI  
-[GitHub](https://github.com/Agustinpujol12) · [LinkedIn](https://www.linkedin.com/in/agustinpujol12)
+· [LinkedIn]([https://www.linkedin.com/in/agustinpujol12](https://www.linkedin.com/in/agustinpujol/))

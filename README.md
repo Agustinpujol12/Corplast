@@ -53,3 +53,33 @@ Incluye una **estructura moderna y adaptable (responsive)** con navegación clar
 ## 🚀 Ejecución local
 
 https://corplast.vercel.app/
+
+---
+
+## 🖼️ Vista previa
+
+<p align="center">
+  <img src="img/logo4.png" alt="Logo Corplast" width="200" style="margin:10px"/>
+</p>
+
+<p align="center">
+  <img src="docs/home-preview.png" alt="Vista previa del inicio" width="600" style="margin:10px"/>
+</p>
+
+*(Podés agregar capturas de la página principal o secciones dentro de una carpeta `docs/` si querés mostrarlas en GitHub.)*
+
+---
+
+## 📄 Licencia
+
+Este proyecto fue desarrollado por **Agustín Pujol** como trabajo de desarrollo web para **Corplast S.R.L.**  
+Uso con fines educativos o de portafolio personal permitido.  
+© 2025 Agustín Pujol. Todos los derechos reservados.
+
+---
+
+## 👨‍💻 Autor
+
+**Agustín Pujol**  
+Desarrollador de software | Android · Web · UX/UI  
+[GitHub](https://github.com/Agustinpujol12) · [LinkedIn](https://www.linkedin.com/in/agustinpujol12)

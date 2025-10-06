@@ -5,19 +5,19 @@ body {
     color: #333;
 }
 
-/* Header and Navbar */
+/* Header logo - versión grande y visible */
 .header .logo {
-    height: 80px;             /* Mantiene la altura del header */
-    width: auto;              /* Conserva proporciones originales */
-    max-width: 320px;         /* 🔹 Más ancho y visible */
-    border-radius: 6px;       /* Esquinas suaves */
-    object-fit: contain;      /* Evita deformaciones */
-    transform: translateY(-5px); /* Centrado visual */
-    transition: transform 0.3s ease, max-width 0.3s ease;
+    height: 100px;             /* 🔹 más alto */
+    width: auto;               /* mantiene proporción */
+    max-width: 260px;          /* asegura que no se desborde */
+    border-radius: 6px;
+    object-fit: contain;       /* evita deformaciones */
+    transform: translateY(-8px); /* lo centra visualmente */
+    transition: transform 0.3s ease;
 }
 
 .header .logo:hover {
-    transform: translateY(-5px) scale(1.05); /* Pequeño efecto al pasar el cursor */
+    transform: translateY(-8px) scale(1.05);
 }
 
 
